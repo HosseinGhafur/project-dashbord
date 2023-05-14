@@ -1,0 +1,79 @@
+:root {
+    --base-color: #3C486B;
+    --icon-color: #F9D949;
+    --color-red-m: #D21312;
+    --color-white: #fff;
+    --color-dark-l: #2B2E4A;
+    --color-red-l: #E84545;
+}
+
+
+.topbar {
+    width: 100%;
+    height: 4rem;
+    position: sticky;
+    z-index: 999;
+    background-color: var(--color-dark-l);
+    top: 0;
+
+}
+
+.wraperr {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.topbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-left {
+    width: 8rem;
+    height: 8rem;
+    transform: translateY(-27px);
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    transform: translateY(-33px);
+}
+
+.topbar-right_icon {
+    color: var(--color-red-l);
+    position: relative;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.top-icon_badge {
+    position: absolute;
+    bottom: 0.9rem;
+    right: 0rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    background-color: white;
+    width: 0.7rem;
+    height: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+}
+
+.topbar-left__icon {
+    width: 100%;
+    height: 100%;
+
+}
+
+.topbar-right_icon-img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 3rem;
+}

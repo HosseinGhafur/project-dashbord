@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React, { useState } from 'react'
+import './App.css'
+import { useRoutes } from 'react-router-dom'
+import Routes from './Routes'
+import Topbar from './Components/TopBar/Topbar'
+import Sidebar from './Components/SideBar/Sidebar'
+import Customhook from './Customhook'
+
+
+export default function App() {
+  const [Count, addcount, minuscount] = Customhook(0)
+
+  // let route = useRoutes(Routes)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <Topbar />
+      <div className="section">
+        <Sidebar />
+        {route}
+      </div>
+ */}
+
+      <p>{Count}</p>
+      <button onClick={addcount}>Add</button>
+      <button onClick={minuscount}>Minus</button>
+
+    </>
+  )
 }
 
-export default App;
+
+
+

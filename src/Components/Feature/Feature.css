@@ -1,0 +1,70 @@
+:root {
+    --base-color: #3C486B;
+    --icon-color: #F9D949;
+    --color-red-m: #D21312;
+    --color-white: #fff;
+    --color-dark-l: #2B2E4A;
+    --color-red-l: #E84545;
+    --color-orange: #FF8400;
+    --color-green: #32CD30;
+}
+
+
+.feature {
+    width: 100%;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.feature-box__item {
+    padding: 1rem;
+    box-shadow: 0px 0px 10px;
+    width: 20rem;
+    border-radius: 0.4rem;
+    background-color: var(--color-dark-l);
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.feature-box__item:hover {
+    transform: scale(1.1);
+}
+
+.feature-box__title {
+    color: var(--color-red-m);
+}
+
+.feature-box__main {
+    display: flex;
+    align-items: center;
+}
+
+.main__money {
+    color: var(--color-orange);
+    font-weight: 700;
+    font-size: large;
+}
+
+.main__rate {
+    color: var(--color-green);
+    margin-left: 1rem;
+}
+
+.main__rate-icon {
+    color: var(--color-green);
+}
+
+.negative {
+    color: red;
+}
+
+.main__footer {
+    margin-top: 1rem;
+    display: block;
+    color: var(--color-white);
+}

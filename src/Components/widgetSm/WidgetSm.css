@@ -1,0 +1,71 @@
+:root {
+    --base-color: #3C486B;
+    --icon-color: #F9D949;
+    --color-red-m: #D21312;
+    --color-white: #fff;
+    --color-dark-l: #2B2E4A;
+    --color-red-l: #E84545;
+    --color-orange: #FF8400;
+    --color-green: #32CD30;
+}
+
+.widgetSm {
+    flex: 2;
+    padding: 0rem 2rem;
+
+}
+
+
+.widgetSm__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.widgetSm__box {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark-l);
+    border-radius: 0.4rem;
+
+}
+
+.widgetsm__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.widget__img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4rem;
+}
+
+.widget__text-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetSm__text_name {
+    color: var(--icon-color);
+    width: 10rem;
+    margin-left: 0.5rem;
+}
+
+.widgetSm__text_name-job {
+    color: var(--color-white);
+    margin-left: 0.5rem;
+}
+
+.widgetSm__btn {
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+}

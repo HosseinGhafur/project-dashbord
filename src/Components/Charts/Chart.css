@@ -1,0 +1,22 @@
+.chart {
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+.title-chart {
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.chart-box {
+    padding: 1rem;
+    box-shadow: 0px 0px 10px;
+    border-radius: 0.4rem;
+    background-color: var(--color-dark-l);
+}
+
+.chart-item {
+    padding: 0rem 2rem;
+}
